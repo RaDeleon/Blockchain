@@ -32,7 +32,7 @@ class Blockchain(object):
         }
 
         # Reset the current list of transactions
-        self.current_transactions = []
+        self.current_transactions = [] 
 
         self.chain.append(block)
         return block
@@ -66,9 +66,9 @@ class Blockchain(object):
 
 
         # json.dumps converts json into a string
-        # hashlib.sha246 is used to createa hash
+        # hashlib.sha246 is used to create a hash
         # It requires a `bytes-like` object, which is what
-        # .encode() does.  It convertes the string to bytes.
+        # .encode() does.  It converts the string to bytes.
         # We must make sure that the Dictionary is Ordered,
         # or we'll have inconsistent hashes
 
